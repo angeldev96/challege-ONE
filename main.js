@@ -1,18 +1,26 @@
 
+// //funcion que toma el texto de un input y lo encripta
+// // La letra "e" es convertida para "enter"
+// // La letra "i" es convertida para "imes"
+// // La letra "a" es convertida para "ai"
+// // La letra "o" es convertida para "ober"
+// // La letra "u" es convertida para "ufat"
 
-//encriptar texto con md5 desde el formulario de index.html
 
-function encriptar() {
-    var texto = document.getElementById("textEncript").value;
-    var encriptado = md5(texto);
-    document.getElementById("encriptado").value = encriptado;
+// //funcion que toma el texto de un input y lo desencripta
+// // La letra "enter" es convertida para "e"
+// // La letra "imes" es convertida para "i"
+// // La letra "ai" es convertida para "a"
+// // La letra "ober" es convertida para "o"
+// // La letra "ufat" es convertida para "u"
+
+function desencriptar(texto) {
+  let textoDesencriptado = "";
+  for (let i = 0; i < texto.length; i++) {
+   
 }
 
-//desencriptar texto con md5 desde el formulario de index.html
 
-function desencriptar() {
-    var texto = document.getElementById("texto").value;
-    var desencriptado = md5(texto);
-    document.getElementById("desencriptado").value = desencriptado;
-}
+
+
 
