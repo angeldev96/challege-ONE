@@ -2,6 +2,7 @@ const encrypt = document.getElementById("encrypt");
 const decrypt = document.getElementById("decrypt");
 const input = document.getElementById("input");
 const output = document.getElementById("output");
+const title2 = document.getElementById("title2");
 
 function encriptar(texto) {
 let textoEncriptado = "";
@@ -60,4 +61,6 @@ encrypt.addEventListener("click", () => {
 
 decrypt.addEventListener("click", () => {
   output.innerHTML = desencriptar(input.value);
+  title2.innerHTML = "Texto Desencriptado";
+
 });
