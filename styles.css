@@ -1,10 +1,9 @@
 body {
-
   background-color: black;
   /* background-color: #3eecac;
   background-image: linear-gradient(19deg, #3eecac 0%, #ee74e1 100%);
 */
-  font-family: "Poppins"; 
+  font-family: "Poppins";
   color: whitesmoke;
 }
 
@@ -23,8 +22,7 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-
-.container h1{
+.container h1 {
   font-size: 25px;
   padding-left: 10px;
 }
@@ -44,9 +42,8 @@ body {
   border-radius: 100px;
 }
 
-
-button,button::after {
-  
+button,
+button::after {
   padding: 10px 50px;
   font-size: 20px;
   border: 1px solid rgb(0, 255, 213);
@@ -56,8 +53,6 @@ button,button::after {
   position: relative;
 }
 
-
-
 button::after {
   --move1: inset(50% 50% 50% 50%);
   --move2: inset(31% 0 40% 0);
@@ -66,7 +61,7 @@ button::after {
   --move5: inset(45% 0 6% 0);
   --move6: inset(14% 0 61% 0);
   clip-path: var(--move1);
-  content: 'ONE';
+  content: "ONE";
   position: absolute;
   top: 0;
   left: 0;
@@ -79,13 +74,13 @@ button:hover::after {
   animation: glitch_4011 1s;
   text-shadow: 10 10px 10px black;
   animation-timing-function: steps(2, end);
-  text-shadow: -3px -3px 0px #1df2f0, 3px 3px 0px #E94BE8;
+  text-shadow: -3px -3px 0px #1df2f0, 3px 3px 0px #e94be8;
   background-color: transparent;
   border: 3px solid rgb(0, 255, 213);
 }
 
 button:hover {
-  text-shadow: -1px -1px 0px #1df2f0, 1px 1px 0px #E94BE8;
+  text-shadow: -1px -1px 0px #1df2f0, 1px 1px 0px #e94be8;
 }
 
 button:hover {
@@ -97,52 +92,52 @@ button:hover {
 @keyframes glitch_4011 {
   0% {
     clip-path: var(--move1);
-    transform: translate(0px,-10px);
+    transform: translate(0px, -10px);
   }
 
   10% {
     clip-path: var(--move2);
-    transform: translate(-10px,10px);
+    transform: translate(-10px, 10px);
   }
 
   20% {
     clip-path: var(--move3);
-    transform: translate(10px,0px);
+    transform: translate(10px, 0px);
   }
 
   30% {
     clip-path: var(--move4);
-    transform: translate(-10px,10px);
+    transform: translate(-10px, 10px);
   }
 
   40% {
     clip-path: var(--move5);
-    transform: translate(10px,-10px);
+    transform: translate(10px, -10px);
   }
 
   50% {
     clip-path: var(--move6);
-    transform: translate(-10px,10px);
+    transform: translate(-10px, 10px);
   }
 
   60% {
     clip-path: var(--move1);
-    transform: translate(10px,-10px);
+    transform: translate(10px, -10px);
   }
 
   70% {
     clip-path: var(--move3);
-    transform: translate(-10px,10px);
+    transform: translate(-10px, 10px);
   }
 
   80% {
     clip-path: var(--move2);
-    transform: translate(10px,-10px);
+    transform: translate(10px, -10px);
   }
 
   90% {
     clip-path: var(--move4);
-    transform: translate(-10px,10px);
+    transform: translate(-10px, 10px);
   }
 
   100% {
@@ -151,17 +146,16 @@ button:hover {
   }
 }
 
-
-.output h1{
+.output h1 {
   font-size: 25px;
 }
 
-.output{
-  background-color: #D9AFD9;
-  background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+.output {
+  background-color: #d9afd9;
+  background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
   width: 45%;
   height: 400px;
-  float: right ;
+  float: right;
   margin: 10px;
   padding: 10px;
   border-radius: 10px;
@@ -170,10 +164,9 @@ button:hover {
   font-weight: 600;
 }
 
-.output p{
+.output p {
   margin-left: 12px;
 }
-
 
 .input {
   width: 45%;
@@ -201,29 +194,19 @@ button:hover {
   background-color: whitesmoke;
   outline-color: rgb(0, 255, 255);
   box-shadow: -3px -3px 15px rgb(0, 255, 255);
-  transition: .1s;
+  transition: 0.1s;
   transition-property: box-shadow;
 }
 
-
-.buttons{
-width: 50%;
-margin-left: 100px;
+.buttons {
+  width: 50%;
+  margin-left: 100px;
 }
 
-
-
-
-
-
-
-
-
-
-
 /* Estilos para pantallas pequeñas */
-@media  (max-width: 768px) {
-  .output, .input {
+@media (max-width: 768px) {
+  .output,
+  .input {
     width: 100%;
     float: none;
     margin: 0;
@@ -236,55 +219,44 @@ margin-left: 100px;
     flex: 0 0 60%;
     margin-left: 10px;
     margin-right: 10px;
-    
   }
 
-  .buttons{
+  .buttons {
     order: 2;
     margin-top: 10px;
-    
   }
 
-  .output{
+  .output {
     order: 3;
     flex: 60% 0 60%;
-    
   }
 
-  button{
+  button {
     margin-top: 10px;
     width: 100%;
   }
-
 
   .container {
     display: flex;
     flex-direction: column;
   }
-  
+
   .input {
     order: 1;
     /* estilos para el input */
   }
-  
+
   .buttons {
     order: 2;
     /* estilos para los botones */
   }
-  
+
   .output {
     order: 3;
     /* estilos para el output */
   }
 
-  .button2{
+  .button2 {
     padding: 10px 5px;
   }
-
 }
-
-
-
-
-
-
