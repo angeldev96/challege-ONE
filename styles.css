@@ -142,18 +142,16 @@ button:hover {
   }
 }
 
-
+/* Estilos para pantallas grandes */
 .output{
   background-color: #708ad4;
   width: 45%;
   height: 400px;
-
-  float: right ;
+  float: right;
   margin: 10px;
   padding: 10px;
   border-radius: 10px;
 }
-
 
 .input {
   width: 45%;
@@ -162,21 +160,16 @@ button:hover {
   padding: 10px;
   float: left;
   margin: 10px;
-  display: flex;
   color: rgba(57, 57, 145, 0.877);
   text-align: justify;
   font-size: 20px;
   text-overflow: clip;
   background-color: whitesmoke;
-  /* text-align: center; */
   border: 2px solid white;
   border-radius: 5px;
-  /* box-shadow: 3px 3px 2px rgb(249, 255, 85); */
 }
 
 .input:focus {
-  display: flex;
-  text-align: justify;
   color: rgba(57, 57, 145, 0.877);
   background-color: whitesmoke;
   outline-color: rgb(0, 255, 255);
@@ -185,8 +178,39 @@ button:hover {
   transition-property: box-shadow;
 }
 
-
 .buttons{
-width: 50%;
-margin-left: 100px;
+  width: 50%;
+  margin-left: 100px;
+}
+
+/* Estilos para pantallas pequeñas */
+@media only screen and (max-width: 768px) {
+  .output, .input {
+    width: 100%;
+    float: none;
+    margin: 0;
+    border-radius: 0;
+    margin-top: 5%;
+  }
+
+  .input {
+    order: 1;
+    flex: 0 0 60%;
+  }
+
+  .buttons{
+    order: 2;
+    flex: 0 0 30%;
+  }
+
+  .output{
+    order: 3;
+    flex: 0 0 30%;
+    
+  }
+}
+
+
+@media screen {
+  
 }
