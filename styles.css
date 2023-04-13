@@ -23,6 +23,7 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+
 .logo {
   font-weight: 100;
 }
@@ -40,6 +41,7 @@ body {
 
 
 button,button::after {
+  
   padding: 10px 50px;
   font-size: 20px;
   border: 1px solid rgb(0, 255, 213);
@@ -48,6 +50,8 @@ button,button::after {
   background-color: transparent;
   position: relative;
 }
+
+
 
 button::after {
   --move1: inset(50% 50% 50% 50%);
@@ -142,16 +146,18 @@ button:hover {
   }
 }
 
-/* Estilos para pantallas grandes */
+
 .output{
   background-color: #708ad4;
   width: 45%;
   height: 400px;
-  float: right;
+
+  float: right ;
   margin: 10px;
   padding: 10px;
   border-radius: 10px;
 }
+
 
 .input {
   width: 45%;
@@ -160,16 +166,21 @@ button:hover {
   padding: 10px;
   float: left;
   margin: 10px;
+  display: flex;
   color: rgba(57, 57, 145, 0.877);
   text-align: justify;
   font-size: 20px;
   text-overflow: clip;
   background-color: whitesmoke;
+  /* text-align: center; */
   border: 2px solid white;
   border-radius: 5px;
+  /* box-shadow: 3px 3px 2px rgb(249, 255, 85); */
 }
 
 .input:focus {
+  display: flex;
+  text-align: justify;
   color: rgba(57, 57, 145, 0.877);
   background-color: whitesmoke;
   outline-color: rgb(0, 255, 255);
@@ -178,21 +189,38 @@ button:hover {
   transition-property: box-shadow;
 }
 
+
 .buttons{
-  width: 50%;
-  margin-left: 100px;
+width: 50%;
+margin-left: 100px;
 }
 
 
-@media only screen and (min-width: 768px) {
-  .container {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
+
+footer {
+  padding: 20px;
+  text-align: center;
 }
+
+.footer-icons a {
+  display: block;
+  margin: 0 10px;
+  color: #faf5f5;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-icons a:hover {
+  color: #ffffff;
+}
+
+
+
+
 
 /* Estilos para pantallas pequeñas */
-@media only screen and (max-width: 768px) {
+@media  (max-width: 768px) {
   .output, .input {
     width: 100%;
     float: none;
@@ -208,7 +236,8 @@ button:hover {
 
   .buttons{
     order: 2;
-    flex: 0 0 30%;
+    margin-top: 10px;
+    
   }
 
   .output{
@@ -216,25 +245,41 @@ button:hover {
     flex: 60% 0 60%;
     
   }
+
+  button{
+    margin-top: 10px;
+    width: 100%;
+  }
+
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input {
+    order: 1;
+    /* estilos para el input */
+  }
+  
+  .buttons {
+    order: 2;
+    /* estilos para los botones */
+  }
+  
+  .output {
+    order: 3;
+    /* estilos para el output */
+  }
+
+  .button2{
+    padding: 10px 5px;
+  }
+
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-}
 
-.input {
-  order: 1;
-  /* estilos para el input */
-}
 
-.buttons {
-  order: 2;
-  /* estilos para los botones */
-}
 
-.output {
-  order: 3;
-  /* estilos para el output */
-}
+
 
