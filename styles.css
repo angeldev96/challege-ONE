@@ -183,6 +183,14 @@ button:hover {
   margin-left: 100px;
 }
 
+
+@media only screen and (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
 /* Estilos para pantallas pequeñas */
 @media only screen and (max-width: 768px) {
   .output, .input {
@@ -205,12 +213,28 @@ button:hover {
 
   .output{
     order: 3;
-    flex: 0 0 30%;
+    flex: 60% 0 60%;
     
   }
 }
 
-
-@media screen {
-  
+.container {
+  display: flex;
+  flex-direction: column;
 }
+
+.input {
+  order: 1;
+  /* estilos para el input */
+}
+
+.buttons {
+  order: 2;
+  /* estilos para los botones */
+}
+
+.output {
+  order: 3;
+  /* estilos para el output */
+}
+
