@@ -1,9 +1,10 @@
 body {
+
   background-color: black;
   /* background-color: #3eecac;
   background-image: linear-gradient(19deg, #3eecac 0%, #ee74e1 100%);
-
-  font-family: "Poppins"; */
+*/
+  font-family: "Poppins"; 
   color: whitesmoke;
 }
 
@@ -40,13 +41,15 @@ body {
 
 
 
+
 .input {
-  display: block;
-  margin: auto;
+  text-align: justify;
+  font-size: large;
+  text-overflow: clip;
   margin-bottom: 100px;
   background-color: whitesmoke;
-  max-width: 190px;
-  height: 40px;
+  height: 500px;
+  width: 800px;
   padding: 10px;
   /* text-align: center; */
   border: 2px solid white;
@@ -55,7 +58,8 @@ body {
 }
 
 .input:focus {
-  color: rgb(0, 255, 255);
+  text-align: justify;
+  color: rgba(57, 57, 145, 0.877);
   background-color: whitesmoke;
   outline-color: rgb(0, 255, 255);
   box-shadow: -3px -3px 15px rgb(0, 255, 255);
@@ -63,26 +67,4 @@ body {
   transition-property: box-shadow;
 }
 
-.output {
-  background-color: whitesmoke;
-  max-width: 190px;
-  height: 40px;
-  padding: 10px;
-  /* text-align: center; */
-  border: 2px solid white;
-  border-radius: 5px;
-  /* box-shadow: 3px 3px 2px rgb(249, 255, 85); */
-  display: block;
-  margin: auto;
-}
 
-.output:focus {
-
-  display: block;
-  color: rgb(0, 255, 255);
-  background-color: whitesmoke;
-  outline-color: rgb(0, 255, 255);
-  box-shadow: -3px -3px 15px rgb(0, 255, 255);
-  transition: .1s;
-  transition-property: box-shadow;
-}
