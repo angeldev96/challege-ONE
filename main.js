@@ -56,11 +56,12 @@ return textoDesencriptado;
 
 
 encrypt.addEventListener("click", () => {
+  title2.innerHTML = "Texto Encriptado:";
   output.innerHTML = encriptar(input.value);
 });
 
 decrypt.addEventListener("click", () => {
   output.innerHTML = desencriptar(input.value);
-  title2.innerHTML = "Texto Desencriptado";
+  title2.innerHTML = "Texto Desencriptado:";
 
 });
