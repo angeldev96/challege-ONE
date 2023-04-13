@@ -1,4 +1,5 @@
 
+
 //encriptar texto con md5 desde el formulario de index.html
 
 function encriptar() {
@@ -14,3 +15,4 @@ function desencriptar() {
     var desencriptado = md5(texto);
     document.getElementById("desencriptado").value = desencriptado;
 }
+
