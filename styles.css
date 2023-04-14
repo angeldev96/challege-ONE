@@ -202,12 +202,7 @@ button:hover {
 .buttons {
   width: 50%;
   margin-left: 80px;
-  
 }
-
-
-
-
 
 /* Estilos para pantallas pequeñas */
 @media (max-width: 768px) {
@@ -218,8 +213,6 @@ button:hover {
     border-radius: 5px;
     margin: 5px;
   }
-
- 
 
   .input {
     order: 1;
@@ -265,22 +258,16 @@ button:hover {
   .button2 {
     padding: 10px 5px;
     margin-right: 90px;
-    
   }
 
-  footer{
+  footer {
     order: 4;
     text-align: center;
   }
 
-  .movil{
+  .movil {
     font-size: 15px;
   }
-
- 
-
-  
-
 }
 
 nav {
@@ -301,7 +288,6 @@ nav ul li {
   height: 100%;
 }
 
-
 nav ul li a {
   display: flex;
   justify-content: center;
@@ -317,9 +303,7 @@ nav ul li a {
   -webkit-text-fill-color: transparent;
 }
 
-
-footer a{
-  
+footer a {
   background: #93cfbd;
   background: linear-gradient(to right, #93cfbd 0%, #c465cf 100%);
   -webkit-background-clip: text;
