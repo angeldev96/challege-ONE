@@ -297,10 +297,13 @@ nav ul li a {
   align-items: center;
   padding: 0 20px;
   height: 100%;
-  color: #fff;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 25px;
   font-weight: bold;
+  background: #93cfbd;
+  background: linear-gradient(to right, #93cfbd 0%, #c465cf 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 
