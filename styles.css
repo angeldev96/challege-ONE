@@ -219,6 +219,8 @@ button:hover {
     margin: 5px;
   }
 
+ 
+
   .input {
     order: 1;
     flex: 0 0 60%;
@@ -270,6 +272,15 @@ button:hover {
     order: 4;
     text-align: center;
   }
+
+  .movil{
+    font-size: 15px;
+  }
+
+ 
+
+  
+
 }
 
 nav {
@@ -307,7 +318,7 @@ nav ul li a {
 }
 
 
-footer a {
+footer a{
   
   background: #93cfbd;
   background: linear-gradient(to right, #93cfbd 0%, #c465cf 100%);
