@@ -1,0 +1,37 @@
+body{
+    background-color: whitesmoke;
+    font-family: 'Poppins';
+}
+
+
+
+nav {
+    background-color: cornflowerblue;
+    height: 60px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+  }
+  
+  nav ul li {
+    height: 100%;
+  }
+  
+  nav ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    height: 100%;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
