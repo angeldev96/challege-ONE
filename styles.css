@@ -5,6 +5,8 @@ body {
 */
   font-family: "Poppins";
   color: whitesmoke;
+  overflow-x: hidden;
+
 }
 
 .titulo {
@@ -184,7 +186,7 @@ button:hover {
   background-color: whitesmoke;
   /* text-align: center; */
   border: 2px solid white;
-  border-radius: 5px;
+  border-radius: 10px;
   /* box-shadow: 3px 3px 2px rgb(249, 255, 85); */
 }
 
@@ -204,22 +206,24 @@ button:hover {
   margin-left: 100px;
 }
 
+
+
 /* Estilos para pantallas pequeñas */
 @media (max-width: 768px) {
   .output,
   .input {
-    width: 100%;
+    width: 90%;
     float: none;
-    margin: 0;
-    border-radius: 0;
-    margin-top: 5%;
+    border-radius: 5px;
+    margin: 5px;
+    
   }
+
 
   .input {
     order: 1;
     flex: 0 0 60%;
-    margin-left: 10px;
-    margin-right: 10px;
+
   }
 
   .buttons {
@@ -229,7 +233,8 @@ button:hover {
 
   .output {
     order: 3;
-    flex: 60% 0 60%;
+    flex: 0% 0 60%;
+    
   }
 
   button {
