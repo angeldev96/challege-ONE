@@ -6,7 +6,6 @@ body {
   font-family: "Poppins";
   color: whitesmoke;
   overflow-x: hidden;
-
 }
 
 .titulo {
@@ -101,7 +100,6 @@ button:hover {
     clip-path: var(--move2);
     transform: translate(-10px, 10px);
   }
-
 
   20% {
     clip-path: var(--move3);
@@ -206,8 +204,6 @@ button:hover {
   margin-left: 100px;
 }
 
-
-
 /* Estilos para pantallas pequeñas */
 @media (max-width: 768px) {
   .output,
@@ -216,14 +212,11 @@ button:hover {
     float: none;
     border-radius: 5px;
     margin: 5px;
-    
   }
-
 
   .input {
     order: 1;
     flex: 0 0 60%;
-
   }
 
   .buttons {
@@ -235,7 +228,6 @@ button:hover {
     order: 3;
     flex: 0% 0 60%;
     margin-top: 25px;
-    
   }
 
   button {
@@ -268,11 +260,9 @@ button:hover {
   }
 }
 
-
-
 nav {
   background-color: #333;
-  height: 60px;
+  height: 30px;
 }
 
 nav ul {
@@ -298,4 +288,11 @@ nav ul li a {
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
+}
+
+footer a {
+  background: #93cfbd;
+  background: linear-gradient(to right, #93cfbd 0%, #c465cf 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
