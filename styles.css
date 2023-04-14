@@ -100,6 +100,7 @@ button:hover {
     transform: translate(-10px, 10px);
   }
 
+
   20% {
     clip-path: var(--move3);
     transform: translate(10px, 0px);
@@ -260,3 +261,4 @@ button:hover {
     padding: 10px 5px;
   }
 }
+
