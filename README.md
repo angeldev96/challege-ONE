@@ -6,7 +6,7 @@ Este es un proyecto de encriptación de texto desarrollado utilizando únicament
 
 ### Cómo usar
 1. Clonar este repositorio o descargar los archivos como ZIP.
-2. Abrir el archivo index.html en un navegador web.
+2. Abrir el archivo `index.html` en un navegador web.
 3. Ingresar el texto que se desea encriptar y la clave de encriptación.
 4. Elegir el algoritmo que se desea utilizar.
 5. Presionar el botón "Encriptar" para encriptar el texto.
