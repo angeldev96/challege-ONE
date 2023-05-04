@@ -1,6 +1,9 @@
 # Encriptador de Texto
 Este es un proyecto de encriptación de texto desarrollado utilizando únicamente HTML, CSS y JavaScript. El programa permite encriptar y desencriptar texto.
 
+![index](https://raw.githubusercontent.com/angeldev96/challege-ONE/master/images/index.png)
+
+
 ### Cómo usar
 1. Clonar este repositorio o descargar los archivos como ZIP.
 2. Abrir el archivo index.html en un navegador web.
